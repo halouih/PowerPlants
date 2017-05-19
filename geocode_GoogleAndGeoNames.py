@@ -5,6 +5,7 @@
 # Purpose: Geocoding is something we need to do frequently, so this script will do that.
 #   It leverages GeoNames (http://www.geonames.org/) primarily, and then tries to use
 #   Google if GeoNames does not use. The reason for this is the request limit for Google
+####  Corrected for Python 3, Hamza Haloui, May 2017
 ################################################################################
 
 import urllib, xlrd, unicodedata, time, json
