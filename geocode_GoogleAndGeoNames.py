@@ -21,7 +21,7 @@ sheetIdx = 0 #Zer0-Based!!! If the data is not on the first sheet, you can chang
 userAgent = "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8 GTB7.1 (.NET CLR 3.5.30729)" 
 headers = { 'User-Agent' : userAgent }
 values = { 's' : 'nothing' }
-data = urllib.parse.urlencode(values)
+data = urllib.parse.urlencode(values).encode('utf8')
 
 #Open the excel input dictionary, get the first sheet
 dataDict = xlrd.open_workbook(inputExcelDocument)
